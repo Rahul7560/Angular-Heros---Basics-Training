@@ -3,5 +3,6 @@
 
 <div *ngFor="let hero of HEROES" (click) = "onSelect(hero)">
     <label > {{hero.name}}</label>
-    <input  type="text" [(ngModel)]="hero.name" placeholder="Name" />
 </div>
+
+<app-hero-details [hero]= "selectedHero" > </app-hero-details>
